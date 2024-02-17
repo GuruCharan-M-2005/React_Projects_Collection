@@ -1,0 +1,117 @@
+body {
+    background-color: #fff; /* Default background color */
+    
+}
+  
+  .dark-theme body {
+    background-color: #333; /* Dark theme background color */
+  }
+  
+  .notepad-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  
+  .notepad-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .notepad-search{
+      width: calc(100% - 100px);
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+
+  }
+  .notepad-input {
+      width: 500px;
+      height: 100px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    
+  }
+  
+  .notepad-search::placeholder,
+  .notepad-input::placeholder {
+    color: #aaa;
+  }
+  
+  .theme-toggle-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dark-theme .theme-toggle-btn {
+    background-color: #007bff; /* Dark theme toggle button background color */
+    color: #fff;
+  }
+  
+  .light-theme .theme-toggle-btn {
+    background-color: #007bff; /* Light theme toggle button background color */
+    color: #fff;
+  }
+  
+  .note-container {
+    width: 100%;
+  }
+  
+  .note {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 800px;
+  }
+  
+  .dark-theme .note {
+    background-color: #444; /* Dark theme note background color */
+    color: #fff;
+  }
+  
+  .note p {
+    margin: 0;
+  }
+  
+  .delete-btn{
+      padding: 10px 20px;
+      border: none;
+      background-color: #007bff; /* Blue background color */
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-bottom: 10px;
+
+  }
+  .create-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff; /* Blue background color */
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  
+  .delete-btn:hover,
+  .create-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
