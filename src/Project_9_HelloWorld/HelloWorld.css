@@ -1,0 +1,17 @@
+.hello-world {
+    text-align: center;
+  }
+  
+  .hello-world h1 {
+    color: #333;
+    font-size: 36px;
+    margin-top: 50px;
+  }
+  
+  .hello-world h1:hover {
+    color: #007bff;
+    font-size: 40px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  

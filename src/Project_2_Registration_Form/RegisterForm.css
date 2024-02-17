@@ -1,0 +1,54 @@
+.divsty{
+    background-color: black;
+    height:49.5vw;
+    padding-top: 100px;
+    margin-top: -120px;
+}
+.formsty{
+    width: 400px;
+    height: 500px;
+    margin-top: 120px;
+    margin-left: 600px;
+    border: solid 1px purple;
+    border-radius: 15px;
+}
+.boxsty{
+    font-family: cursive;
+    background-color: black;
+    margin-left: 50px;
+    color: purple;
+    font-size: 18px;
+    margin-top: 55px;
+    width: 300px;
+    height: 35px;
+    border: none;
+    /* position: fixed; */
+    border-bottom: solid 1px purple;
+}
+.boxsty:focus{
+    border-bottom:solid 1px purple;
+    outline: none;
+}
+.butsty{
+    font-family: cursive;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 125px;
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 15px;
+    background-color: purple;
+    color: white;
+    transition: 0.3s;
+}
+.butsty:hover{
+    background-color: rgb(65, 65, 183);
+    width: 180px;
+    height: 45px;
+}
+.error{
+    color:red;
+    font-size: smaller;
+    font-family: cursive;
+}

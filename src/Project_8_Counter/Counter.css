@@ -1,0 +1,38 @@
+.counter-container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+    margin-left: 480px;
+    margin-top: 150px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .counter-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .counter-container button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    margin-left: 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .counter-container button:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+  }
+  
+  .counter-container span {
+    font-size: 20px;
+  }
+
+  

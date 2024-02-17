@@ -1,0 +1,36 @@
+.score-section{
+    text-align: center;
+    margin-top: 15%;
+    font-size: 30px;
+    font-weight: 600;
+}
+.reset-button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0.4);
+}
+.reset-button:hover{
+    width: 150px;
+    height: 70px;
+    background-color: rgba(0,0,0,0.6);
+}
+.main-frame{
+    text-align: center;
+    margin-top: 100px;
+}
+.list-items{
+    list-style: none;
+    margin-left: 45%;
+    margin-top: 30px;
+    padding-top: 20px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.3);
+}
+.list-items:hover{
+    background-color: rgba(0,0,0,0.5);
+}
