@@ -1,0 +1,174 @@
+
+.adventure-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:700px;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .header-left {
+    font-size: 24px;
+    margin-left: 50px;
+  }
+  
+  .header-right ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .header-right ul li {
+    margin-right: 20px;
+  }
+  
+  .header-right ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .header-right ul li a:hover{
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+    transition: 0.3s ease-in-out;
+    border-radius: 1px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #body-1 {
+    background-image: url('http://i.huffpost.com/gen/1866826/images/o-ADVENTURE-facebook.jpg');
+    background-size: cover;
+    height: 400px;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .foreground {
+    text-align: center;
+    margin-left: 100px;
+  }
+  
+  .foreground h2 {
+    font-size: 36px;
+    margin-top: 150px;
+  }
+  
+  .foreground p {
+    font-size: 18px;
+  }
+  .explore1-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .explore-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  
+  .explore1-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .explore-button:hover {
+    background-color: #0056b3;
+  }
+  
+  #body-2 {
+    padding: 20px;
+  }
+  
+  .grid-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+ 
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+ 
+  .photo-1{
+    background-image: url('https://tse4.mm.bing.net/th?id=OIP.i3C4VcI1FGnLGSZfyuVXnQHaDD&pid=Api&P=0&h=180');
+    background-size: cover;
+    height: 300px;
+    position: relative;
+  }
+  .photo-2{
+    background-image: url('https://tse1.mm.bing.net/th?id=OIP.yJgy91-453nb6eWF78GP0AHaE7&pid=Api&P=0&h=180');
+    background-size: cover;
+    height: 300px;
+    position: relative;
+  }
+
+  .photo-3{
+    background-image: url('https://tse2.mm.bing.net/th?id=OIP.c4exqjNbIPMxkSisTHBfJgHaE-&pid=Api&P=0&h=180');
+    background-size: cover;
+    height: 300px;
+    position: relative;
+  }
+  .photo-4{
+    background-image: url('https://tse2.mm.bing.net/th?id=OIP.L7TES9fSOkDFtKzSx2sM8QHaE9&pid=Api&P=0&h=180');
+    background-size: cover;
+    height: 300px;
+    position: relative;
+  }
+  .photo-5 {
+    background-image: url('https://tse4.mm.bing.net/th?id=OIP.q1uVb19tiRaSg8HaFHBs8AHaEK&pid=Api&P=0&h=180');
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    }
+  
+  .explore-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  #footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+  }
+  .footer-column{
+    margin-top: 20px;
+    margin-left: 200px;
+  }
+  .footer-column a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-column a:hover {
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+    transition: 0.3s ease-in-out;
+    border-radius: 1px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
