@@ -1,10 +1,11 @@
 import React from 'react'
-import Notepad from './Project_16_NotePad/Notepad'
+import Receipe from './Project_17_Receipe_Finder/Receipe'
+
 
 export default function () {
   return (
-    <div>
-      <Notepad/>
-    </div>
+   <div>
+    <Receipe/>
+   </div>
   )
 }
