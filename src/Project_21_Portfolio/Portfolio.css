@@ -1,0 +1,148 @@
+.main-container{
+    /* background-color: black; */
+    background: linear-gradient(rgb(38, 37, 37),rgb(19, 19, 24),rgb(39, 36, 36),rgb(64, 65, 64));
+    background-size: cover;
+    padding: 10px;
+    color: white;
+    margin: -10px;
+}
+.header-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:300px;
+}
+.header-main-text{
+    margin-left: 25px;
+    margin-top: 10px;
+    font-size: 35px;
+    color:gray;
+}
+.header-main-text:hover{
+    color:white;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.header-list{
+    display: flex;
+    gap: 55px;
+}
+.header-list-items {
+    text-decoration: none;
+    font-size: 25px;
+    color:gray;
+}
+.header-list-items:hover{
+    border-bottom: 4px solid white;
+    border-radius: 3px;
+    color:white;
+    padding-bottom: 5px;
+    transition: 0.3s ease-in-out;
+}
+.text-container {
+    margin-top: 100px;
+  } 
+  
+  .text-area {
+    margin-left: 500px;
+    display: grid;
+    font-size: 55px;
+  }
+  .text-brief{
+    margin-top: 50px;
+    display: grid;
+    color: gray;
+    font-size: 32px;
+    margin-left: 100px;
+  }
+  .text-brief:hover{
+    color: white;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  #projects-container{
+    margin-top: 50px;
+    text-align: center;
+  }
+  .projects-topic{
+    font-size: 45px;
+  }
+  .project-list{
+    text-align: left;
+    margin-left: 100px;
+    display: grid;
+    gap: 15px;
+    margin-top: 50px;
+  }
+
+  .project-list-items{
+    list-style-type: none;
+    font-size: 35px;
+    color: gray;
+  }
+  
+  .project-card{
+    color: gray;
+    font-size: 35px;
+    text-decoration: none;
+  }
+   .project-card:hover{
+    color: white;
+    transition: 0.2s ease-in-out;
+    border-bottom: 2px solid white;
+  } 
+  #education-container{
+    margin-top: 50px;
+    text-align: center;
+  }
+  .education-topic{
+    font-size: 45px;
+  }
+  .education-list{
+    text-align: left;
+    margin-left: 100px;
+    display: grid;
+    gap: 15px;
+    margin-top: 50px;
+  }
+  .education-list-items{
+    list-style-type: none;
+    font-size: 35px;
+    color: gray;
+  }
+  
+  .education-list-items:hover{
+    color: white;
+    transition: 0.2s ease-in-out;
+  }
+  
+  #contact-container{
+    margin-top: 50px;
+    text-align: center;
+  }
+  .contact-topic{
+    font-size: 45px;
+  }
+  .contact-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 200px;
+    margin-top: 50px;
+  }
+  .contact-grid-container{
+    /* display: grid; */
+    /* gap: 10px; */
+    font-size: 35px;
+    color: gray;
+  }
+  .contact-grid-items{
+    list-style-type: none;text-decoration: none;
+    font-size: 35px;
+    color: gray;
+  }
+  .contact-grid-items:hover{
+    color: white;
+    border-bottom: 2px solid white;
+  }
+  
+  
