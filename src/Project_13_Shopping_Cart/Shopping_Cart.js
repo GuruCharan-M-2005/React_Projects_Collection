@@ -6,12 +6,22 @@ import {Link,useNavigate} from 'react-router-dom'
 export default function Shopping_Cart() {
     const nav=useNavigate()
     const [items, setItems] = useState([]);
+    const [totalcount,setTotalcount]=useState(0)
+    const [totalamount,setTotalamount]=useState(0)
     const URL = "http://localhost:3200/items";
   
     const fetchData = async () => {
       try {
         const response = await axios.get(URL);
-        setItems(response.data);
+        const temp=response.data
+        var count=0,sum=0;
+        temp.forEach((data) => {
+          count=count+(data.count);
+          sum=sum+(data.count*data.amount);
+        })
+        setTotalamount(sum);
+        setTotalcount(count);
+        setItems(temp);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -77,6 +87,7 @@ export default function Shopping_Cart() {
         
         ))}
       </div>
+          <h1>Count : {totalcount}</h1> <h1>Amount : {totalamount}</h1>
         <Link to='/'><button style={{marginRight:'50px'}} className='main-item-button'>Continue Shopping</button></Link>
         <button className='main-item-button' onClick={()=>checkout()}>Check Out</button>
     </div>

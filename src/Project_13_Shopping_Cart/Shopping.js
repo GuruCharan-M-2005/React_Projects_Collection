@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import './Shopping.css';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function ShoppingCart() {
   const [items, setItems] = useState([]);
   const URL = "http://localhost:3200/items";
-
+  const nav=useNavigate()
   const fetchData = async () => {
     try {
       const response = await axios.get(URL);
       setItems(response.data);
+        
     } catch (error) {
       console.error('Error fetching data:', error);
     }
@@ -28,6 +29,7 @@ export default function ShoppingCart() {
       const newone=currentItem.count+1
       await axios.patch(`${URL}/${id}`,{count:newone});
       fetchData();
+      nav('./Cart')
     } catch (error) {
       console.error('Error updating item count:', error);
     }
@@ -43,7 +45,7 @@ export default function ShoppingCart() {
             <h2>{data.name}</h2>
             <h3>{data.price}</h3>
             <div className='button-container'> 
-              <Link to='/Cart'><button className='main-item-button' onClick={() => additemtocart(data.id)}>Add to Cart</button></Link>
+              <button className='main-item-button' onClick={() => additemtocart(data.id)}>Add to Cart</button>
             </div>
           </div>
         ))} 

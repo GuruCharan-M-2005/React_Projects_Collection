@@ -9,7 +9,7 @@
 .header-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap:300px;
+    gap:600px;
 }
 .header-main-text{
     margin-left: 25px;
@@ -41,12 +41,13 @@
 }
 .text-container {
     margin-top: 100px;
+    width: 900px;
   } 
   
   .text-area {
-    margin-left: 500px;
-    display: grid;
-    font-size: 55px;
+    margin-left: 100px;
+    /* display: grid; */
+    font-size: 80px;
   }
   .text-brief{
     margin-top: 50px;
@@ -62,17 +63,28 @@
   }
   #projects-container{
     margin-top: 50px;
-    text-align: center;
   }
   .projects-topic{
-    font-size: 45px;
+    font-size: 65px;
+    margin-left: 100px;
   }
   .project-list{
     text-align: left;
-    margin-left: 100px;
+    margin-left: 60px;
     display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 15px;
     margin-top: 50px;
+  }
+  .project-grid{
+    border: 1px solid gray;
+    height: 400px;
+    border-radius: 30px;
+    margin: 20px;
+  }
+  .project-grid-text{
+   margin-top: 350px;
+   margin-left: 20px;
   }
 
   .project-list-items{
@@ -91,58 +103,45 @@
     transition: 0.2s ease-in-out;
     border-bottom: 2px solid white;
   } 
-  #education-container{
-    margin-top: 50px;
-    text-align: center;
-  }
-  .education-topic{
-    font-size: 45px;
-  }
-  .education-list{
-    text-align: left;
-    margin-left: 100px;
-    display: grid;
-    gap: 15px;
-    margin-top: 50px;
-  }
-  .education-list-items{
-    list-style-type: none;
-    font-size: 35px;
-    color: gray;
-  }
-  
-  .education-list-items:hover{
-    color: white;
-    transition: 0.2s ease-in-out;
-  }
+
   
   #contact-container{
+    margin-left: 100px;
     margin-top: 50px;
-    text-align: center;
+  }  
+  .form-heading{
+    font-size: 65px;
+    margin-bottom: 50px;
   }
-  .contact-topic{
-    font-size: 45px;
+  .form-main{
+    width: 1200px;
   }
-  .contact-grid{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 200px;
-    margin-top: 50px;
-  }
-  .contact-grid-container{
-    /* display: grid; */
-    /* gap: 10px; */
-    font-size: 35px;
-    color: gray;
-  }
-  .contact-grid-items{
-    list-style-type: none;text-decoration: none;
-    font-size: 35px;
-    color: gray;
-  }
-  .contact-grid-items:hover{
-    color: white;
-    border-bottom: 2px solid white;
+  .form-group {
+    margin-bottom: 40px;
   }
   
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 8px;
+    width: 600px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  button {
+    background-color: #7c7da1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    width: 200px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3759b7;
+  }
   

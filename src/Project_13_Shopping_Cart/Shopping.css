@@ -14,12 +14,15 @@
     background-color: rgba(0,0,0,0.1);
     padding: 50px;
 }
+.main-image{
+  border-radius: 50px;
+}
 .main-item-button{
     border-radius: 15px;
     border: none;
     background-color: rgb(116, 121, 185);
-    width: 100px;
-    height: 40px;
+    width: 200px;
+    height: 60px;
 }
 .main-item-button:hover {
     background-color: rgb(86, 72, 220);
