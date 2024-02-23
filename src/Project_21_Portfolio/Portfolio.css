@@ -47,7 +47,7 @@
   .text-area {
     margin-left: 100px;
     /* display: grid; */
-    font-size: 80px;
+    font-size: 70px;
   }
   .text-brief{
     margin-top: 50px;
@@ -81,6 +81,10 @@
     height: 400px;
     border-radius: 30px;
     margin: 20px;
+  }
+  .project-grid:hover{
+    transform: scale(1.1);
+    transition: transform 0.4s ease-in-out;
   }
   .project-grid-text{
    margin-top: 350px;
@@ -124,8 +128,9 @@
   input[type="email"],
   textarea {
     padding: 8px;
-    width: 600px;
-    font-size: 16px;
+    width: 700px;
+    height: 50px;
+    font-size: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
   }
@@ -135,7 +140,8 @@
     color: white;
     padding: 10px 20px;
     border: none;
-    width: 200px;
+    width: 100px;
+    height: 50px;
     border-radius: 20px;
     font-size: 20px;
     cursor: pointer;

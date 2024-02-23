@@ -18,13 +18,14 @@ export default function Portfolio() {
         <div id='about-container'>
             <div className="text-container">
                 <div className="text-area">
-                    Hello! I am Gurucharan, I am Developer...
+                    Hello! I am Gurucharan...
                 </div>
                 <div className='text-brief'>
-                    I am developer. I am specialized in creating, designing, and implementing software solutions,
-                     applications, or systems using programming languages, frameworks, and tools to meet specific user needs or 
-                     solve technological challenges. I often work collaboratively in teams, utilizing their problem-solving skills,
-                      creativity, and technical expertise to develop innovative and efficient software products.
+                    As a developer, I had specialized in the creation, design, and implementation
+                    of software solutions, applications, or systems. My expertise lies in utilizing programming
+                    languages, frameworks, and tools to address specific user requirements and overcome technological
+                    hurdles. I excel in collaborative team environments, leveraging problem-solving skills, creativity, and technical
+                    proficiency to deliver innovative and effective software products.
                 </div>
             </div>
         </div>
