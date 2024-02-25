@@ -1,4 +1,11 @@
 var nodemailer = require('nodemailer');
+var express = require('express');
+var cors = require('cors');
+
+const app = express();
+app.use(cors());
+
+const port = 3001;
 
 var transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -8,17 +15,29 @@ var transporter = nodemailer.createTransport({
   }
 });
 
-var mailOptions = {
-  from: '22cse061@skcet.ac.in',
-  to: 'oscaralwin@gmail.com',
-  subject: 'hi',
-  text: `gicidecieg eh dh e`
-};
+app.use(express.json()); 
 
-transporter.sendMail(mailOptions, function(error, info){
-  if (error) {
-    console.log(error);
-  } else {
-    console.log('Email sent: ' + info.response);
-  }
+app.post('/send', (req, res) => {
+  const data = JSON.stringify(req.body.message);
+  const email = JSON.stringify(req.body.email);
+  
+  var mailOptions = {
+    from: '22cse061@skcet.ac.in',
+    to: `${email}`,
+    subject: 'Mailing using NodeMailer',
+    text: `${data}`
+  };
+  transporter.sendMail(mailOptions, (error, info)=>{
+    if (error) {
+      console.log(error);
+      res.status(500).send('Failed to send email'); // Send error response
+    } else {
+      console.log('Email sent: ' + info.response);
+      res.status(200).send('Email sent successfully'); // Send success response
+    }
+  });
+});
+
+app.listen(port, () => {
+  console.log(`Listening in port ${port}`);
 });
