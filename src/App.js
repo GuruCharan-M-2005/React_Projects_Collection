@@ -1,11 +1,11 @@
 import React from 'react'
-import AboutPage from './Project_23_AboutPage/AboutPage'
+import ImageSlider from './Project_24_Image_Slider/ImageSlider'
 
 
 export default function () {
   return (
     <div>
-      <AboutPage/>
+      <ImageSlider/>
     </div>
   )
 }

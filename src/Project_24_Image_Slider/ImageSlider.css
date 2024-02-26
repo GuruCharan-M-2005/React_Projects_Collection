@@ -1,0 +1,42 @@
+.custom-carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+  }
+  
+  .carousel-slide {
+    width: 100%;
+    height: 300px; /* Adjust the height of the slides as needed */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .custom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .custom-arrow-prev {
+    left: 10px; /* Adjust the left position as needed */
+  }
+  
+  .custom-arrow-next {
+    right: 10px; /* Adjust the right position as needed */
+  }
+  
+  .custom-arrow img {
+    width: 50px; /* Adjust the size of the arrow images as needed */
+    height: auto;
+  }
+  
+  /* Add hover effect for arrows */
+  .custom-arrow:hover img {
+    opacity: 0.8;
+  }
+  
